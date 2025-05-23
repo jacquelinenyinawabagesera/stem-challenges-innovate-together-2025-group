@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  html, body {
+    height: 100%;
+    width: 100%;
+    background: #f7faff;
+    color: #232946;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+    background: rgba(255, 254, 254, 0.95);
+    box-shadow: 0 2px 18px rgba(79,140,255,0.07);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem 0;
+  }
+  .group-name {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #4f8cff;
+    margin-right: 40px;
+    text-shadow: 0 2px 8px #fff8;
+    user-select: none;
+  }
+  nav {
+    display: flex;
+    gap: 30px;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  nav a {
+    color: #232946;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 22px;
+    transition: background 0.2s, color 0.2s;
+  }
+  nav a:hover, nav a:focus, nav a.active {
+    background: #4f8cff;
+    color: #fff;
+    outline: none;
+  }
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 1000px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./images/groupphoto.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .hero-content{
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+    padding: 40px 40px 40px 48px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    animation: fadein 1.2s;
+    margin-left: 31%; 
+    margin-top: 35%;
+    text-align: center;
+  }
+  @keyframes fadein {
+    from { opacity: 0; transform: translateY(40px);}
+    to   { opacity: 1; transform: none;}
+  }
+  .hero-content h1 {
+    font-size: 3.2rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    margin-bottom: 18px;
+    background: linear-gradient(90deg, #4f8cff, #ffb347 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    user-select: none;
+  }
+  .hero-content p {
+    font-size: 2rem;
+    line-height: 1.7;
+  }
+  main {
+    max-width: 1200px;
+    margin: 60px auto 40px;
+    padding: 0 20px;
+  }
+  .about-section {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+  }
+  .about-text {
+    flex: 1 1 500px;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #232946;
+    min-width: 280px;
+  }
+  .about-text h2 {
+    font-size: 2.2rem;
+    color: #4f8cff;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .about-image {
+    flex: 1 1 400px;
+    min-width: 280px;
+    height: 500px;
+    border-radius: 25px;
+    background-image: url('./images/girls.png');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 8px 32px #4f8cff22;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+  .about-image:hover {
+    transform: scale(1.04);
+    box-shadow: 0 14px 50px #4f8cff44;
+  }
+  .challenges-section {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+  .challenge-card {
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0 10px 36px #4f8cff22;
+    overflow: hidden;
+    cursor: pointer;
+    flex: 1 1 400px;
+    max-width: 450px;
+    min-width: 280px;
+    text-decoration: none;
+    color: #232946;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none; 
+  }
+  .challenge-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 18px 48px #ffb34766, 0 4px 20px #00c9a733;
+    background: #eaf6ff;
+  }
+  .challenge-icon {
+    font-size: 2.8rem;
+    margin-top: 24px;
+    margin-bottom: 0;
+    color: #4f8cff;
+    transition: color 0.3s;
+  }
+  .challenge-card:hover .challenge-icon {
+    color: #00c9a7;
+  }
+  .challenge-image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background: #f7faff;
+  }
+  .challenge-content {
+    padding: 30px 25px 40px;
+    text-align: center;
+  }
+  .challenge-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #4f8cff;
+  }
+  .challenge-desc {
+    font-size: 1.1rem;
+    color: #232946cc;
+    line-height: 1.5;
+  }
+  
+  footer {
+    background: #4f8cff;
+    color: #fff;
+    text-align: center;
+    padding: 25px 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 -6px 25px #4f8cff11;
+    user-select: none;
+  }
+
+
+
+  .testimonials-section {
+    background: linear-gradient(120deg, #eaf6ff 80%, #d0f3e6 100%);
+    padding: 80px 30px 90px 30px;
+    border-radius: 40px;
+    box-shadow: 0 12px 40px #4f8cff22;
+    margin-bottom: 80px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  
+  .testimonials-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #00c9a7;
+    font-weight: 800;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-shadow: 0 2px 8px #fff7;
+  }
+  
+  .testimonials-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px 60px;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .testimonial-card {
+    background: #fff;
+    border-radius: 28px;
+    box-shadow: 0 8px 32px #4f8cff33, 0 1.5px 8px #00c9a722;
+    padding: 50px 40px 40px 40px;
+    max-width: 350px;
+    min-width: 270px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.25s, box-shadow 0.25s;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-12px) scale(1.04);
+    box-shadow: 0 16px 48px #00c9a755, 0 4px 20px #4f8cff33;
+  }
+  
+  .testimonial-card::before {
+    content: "“";
+    position: absolute;
+    top: 18px;
+    left: 25px;
+    font-size: 3.5rem;
+    color: #4f8cff33;
+    font-family: serif;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .testimonial-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #00c9a7;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 16px #00c9a722;
+  }
+  
+  .testimonial-text {
+    font-size: 1.18rem;
+    color: #232946dd;
+    text-align: center;
+    margin-bottom: 22px;
+    line-height: 1.7;
+    position: relative;
+    z-index: 2;
+    font-style: italic;
+  }
+  
+  .testimonial-name {
+    font-weight: 700;
+    color: #ffb347;
+    font-size: 1.15rem;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 900px) {
+    .testimonials-list {
+      flex-direction: column;
+      gap: 35px;
+      align-items: center;
+    }
+    .testimonials-section {
+      padding: 45px 10px 60px 10px;
+    }
+  }
+  
+
+
+  @media (max-width: 1024px) {
+    .nav-container { flex-direction: column; gap: 10px; padding: 12px 0;}
+    .group-name { margin-right: 0; font-size: 1.5rem;}
+    .hero-content { max-width: 100%; padding: 0 10px; margin-top: 110px; margin-left: 0;}
+    .about-section { flex-direction: column; margin: 40px auto;}
+    .about-image, .about-text { max-width: 100%; min-width: auto; height: 220px; margin: 0 auto;}
+    .challenges-section { gap: 30px;}
+    .challenge-card { max-width: 90vw; flex: 1 1 100%;}
+    .testimonials-list { flex-direction: column; gap: 25px; align-items: center;}
+  }
+  @media (max-width: 600px) {
+    .group-name { font-size: 1.1rem;}
+    nav { font-size: 0.95rem; gap: 8px;}
+    .challenge-image { height: 180px;}
+    .about-image, .about-text { height: 140px;}
+    .hero { min-height: 400px; height: 80vh;}
+    .hero-content { margin-top: 60px; padding: 12px 6px; margin-left: 0;}
+  }
