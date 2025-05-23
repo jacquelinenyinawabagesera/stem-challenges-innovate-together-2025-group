@@ -1,0 +1,870 @@
+@font-face {
+  font-family: poppins;
+  src: url(Fonts/Poppins-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: poppins;
+  overflow-x: hidden;
+  margin-bottom: -0;
+}
+
+
+.color-blue {
+  position: relative;
+  background-color: rgb(200, 236, 236);
+  width: 100vw;
+  height: 70vh;
+  box-sizing: border-box;
+}
+
+.logo {
+  position: relative;
+  top: 2vw;
+  display: flex;
+  gap: 1vw;
+}
+
+.logo img {
+  width: 4vw;
+  margin-left: 2vw;
+}
+
+.top-buttons {
+  display: flex;
+  margin-left: auto;
+  gap: 5vw;
+  align-items: center;
+  padding-right: 2vw;
+  z-index: 10;
+  position: relative;
+}
+
+.top-buttons a {
+  text-decoration: none;
+  color: blue;
+}
+
+.top-buttons a:hover {
+  cursor: pointer;
+  color: black;
+  border-radius: 20px;
+}
+
+
+.thinking {
+  margin-top: 20vh;
+  margin-left: 5vw;
+  color: blue;
+  display: flex;
+}
+
+.thinking h1 {
+  font-size: 8ex;
+}
+
+.thinking img {
+  width: 30vw;
+  margin-left: 30vw;
+  position: relative;
+  top: -28vh;
+}
+
+#fun {
+  margin-left: 7vw;
+}
+
+
+.ready {
+  text-align: center;
+  margin-top: 5vh;
+  color: blue;
+  font-size: 3ex;
+}
+
+.ready p {
+  font-size: 1ex;
+}
+
+.ready:hover {
+  transform: scale(1.1);
+}
+
+
+.pick {
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.image-class {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  gap: 5%;
+  margin-bottom: 5em;
+}
+
+.images {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  gap: 5%;
+  margin-top: 5vh;
+}
+
+.images img {
+  flex-shrink: 0;
+  width: auto;
+  height: 20vh;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Puzzle Section */
+#puzzles {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.challenge-container {
+  font-family: 'Poppins', sans-serif;
+  color: #232946;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.challenge-title {
+  color: #4F8CFF;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 40px;
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.challenge-block {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 30px;
+  background: #EAF6FF;
+  border-left: 8px solid #00C9A7;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 201, 167, 0.15);
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.challenge-block.flipped {
+  grid-template-columns: 1fr 280px;
+}
+
+.challenge-image {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(79, 140, 255, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.challenge-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(79, 140, 255, 0.4);
+}
+
+.challenge-text h2 {
+  color: #4F8CFF;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.challenge-text p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.challenge-text p strong {
+  color: #4F8CFF;
+}
+
+.grandma {
+  margin-top: 10vh;
+}
+.videos{
+  margin-top: 10vh;
+  margin-left: 28vw;
+  gap:5vw;
+}
+.videos video{
+  border-radius: 50px;
+}
+.video{
+  margin-left: 40vw;
+   margin-top: 10vh;
+}
+.trump{
+  margin-top: 10vh;
+}
+.numbers{
+    display: flex;
+    gap:4%;
+    font-size: 200%;
+
+}
+.youtube {
+  margin-top: 5vh;
+  border-radius: 20px;
+
+
+}
+
+.youtube img {
+  width: 20vw;
+  margin-left: 9vw;
+}
+
+.answer {
+  border: none;
+  margin-top: 5vw;
+  margin-left: 5vw;
+  width: 25vw;
+}
+
+.content {
+  display: flex;
+  gap: 15vw;
+   display: block;
+     border: solid 20px rgb(200, 236, 236);
+  width: 40vw;
+  animation: none;
+  position: relative;
+  margin-left: 5vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+.youtube h2 {
+  text-align: center;
+}
+
+.google_play {
+  margin-top: 5vh;
+  margin-left: 5vw;
+}
+
+summary {
+  text-align: center;
+  font-size: 3ex;
+  margin-top: 5vh;
+  border: none;
+  background-color: rgb(200, 236, 236);
+}
+
+#income {
+  margin-left: 45vw;
+  font-size: 3ex;
+  color: brown;
+}
+
+.google_play {
+  display: flex;
+  gap: 15vw;
+  position: relative;
+  width: 98vw;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.google_play img {
+  position: relative;
+  width: 20vw;
+    border-left: solid rgb(189, 231, 164) 10px;
+}
+
+.calculation {
+  position: relative;
+  top: 7vh;
+  margin-left:9vw;
+  width: 30vw;
+}
+.calculation p{
+  width: 19vw;
+  margin-left:9vw;
+}
+
+.self-driving-cars img {
+  width: 30vw;
+  margin-left: 35vw;
+  margin-top: 8vh;
+  border-radius: 20px;
+  transition: 1s ease-in-out;
+}
+
+.self-driving-cars img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+
+}
+
+.cars {
+  text-align: center;
+  margin-top: 12vh;
+  color: rgb(70, 2, 2);
+}
+
+.about_car {
+  display: flex;
+  text-align: center;
+  margin-top: 5vh;
+  padding: 3vh;
+  gap: 5vh;
+  border: none;
+  background-color: rgb(221, 236, 236);
+}
+
+.previous {
+  border: solid 1px;
+  padding: 7vw 1vh;
+  margin-left: 10vw;
+  border-radius: 20px;
+  box-shadow: 15px 18px 10px -8px rgb(255, 254, 254);
+}
+
+.what_would_you_do {
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.what_would_you_do img {
+
+  position: relative;
+  z-index: -1;
+}
+
+.project {
+  position: relative;
+  z-index: 1;
+  /* top: -100vh; */
+  text-align: center;
+  color: white;
+  margin-top: -100vh;
+}
+
+.project h3 {
+  margin-top: 5vh;
+}
+
+.us {
+  display: flex;
+  gap: 3vw;
+}
+
+.us p {
+  border-right: solid 2px white;
+  padding: 9vh 2vh;
+  margin-left: 1vw;
+  margin-top: 8vh;
+}
+
+.calm {
+  display: flex;
+  margin-top: 20vh;
+  gap: 8vw;
+}
+
+.calm img {
+  width: 30vw;
+  margin-left: 6.5vw;
+}
+
+.calm p {
+  color: black;
+  width: 45vw;
+  text-align: left;
+  font-size: 2ex;
+  margin-top: 8vh;
+}
+
+.failure {
+  grid-template-columns: 280px 1fr;
+  gap: 30px;
+  background: #EAF6FF;
+  border-left: 8px solid #00C9A7;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 201, 167, 0.15);
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+#challanges {
+  position: relative;
+   margin-top: 10vh; 
+}
+
+#challanges h1 {
+  position: relative;
+  text-align: center;
+  color: rgb(90, 2, 2);
+}
+
+#challanges h2 {
+  text-align: center;
+  color: rgb(90, 2, 2);
+}
+
+.pulley {
+  display: flex;
+  gap: 15vw;
+  margin-top: 5vh;
+}
+
+.pulley p {
+  width: 40vw;
+  margin-left: 6vw;
+  position: relative;
+  top: 15vh;
+  font-size: 2ex;
+  grid-template-columns: 280px 1fr;
+  gap: 30px;
+  background: #fdffea;
+  border-left: 8px solid #8a0909;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 201, 167, 0.15);
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.pulley img {
+  width: 30vw;
+}
+
+.our_work {
+  margin-top: 20vh;
+  cursor: pointer;
+  border: none 1px;
+  padding: 4%;
+  display: flex;
+  gap: 7vw;
+}
+
+.our_work p {
+  width: 30vw;
+  margin-left: 8vw;
+  font-size: 2ex;
+}
+
+.our_work img {
+  width: 20vw;
+  margin-left: 8vw;
+  margin-top: 3vh;
+}
+
+.packing {
+  cursor: pointer;
+  border: none 1px;
+  padding: 4%;
+}
+
+.our_work:hover {
+  background-color: rgb(192, 209, 235);
+  color:rgb(93, 93, 226);
+}
+
+#pulley {
+  width: 25vw;
+}
+
+.Helping {
+  display: flex;
+  margin-left: 10vw;
+  gap: 10vw;
+  margin-top: 10vh;
+  grid-template-rows: 280px 1fr;
+  background: #fff7ea;
+  border-bottom: 8px solid #8a0909;
+  padding: 25px 30px;
+  border-radius: 15px;
+  width: 80vw;
+    box-shadow: 15px 18px 10px -8px rgb(189, 187, 187);
+}
+
+.Helping p {
+  position: relative;
+  margin-top: 15vh;
+  text-align: center;
+}
+
+.Helping h1 {
+  position: relative;
+  margin-top: 15vh;
+}
+video{
+  border-radius: 20px;
+}
+.wind{
+  margin-top: 7vh;
+  margin-left: 3.5vw;
+}
+.power{
+  display: flex;
+  gap: 5vw;
+}
+.power img{
+  width: 20vw;
+}
+.electricity{
+   grid-template-rows: 280px 1fr;
+  background: #fff7ea;
+  border-bottom: 8px solid #09618a;
+  padding: 5vh 4vw;
+  border-radius: 15px;
+  width: 20vw;
+  height: 50vh;
+  box-shadow: 15px 18px 10px -8px rgb(189, 187, 187);
+  margin-top: 10vh;
+}
+.electric{
+  position: relative;
+  top: 4vh;
+}
+.turbines{
+  position: relative;
+  top: 8vh;
+}
+.model {
+  display: flex;
+  margin-left: 5vw;
+  gap: 10vw;
+  margin-top: 10vh;
+  grid-template-rows: 280px 1fr;
+  background: #fff7ea;
+  border-bottom: 8px solid #09618a;
+  padding: 25px 30px;
+  border-radius: 15px;
+  width: 80vw;
+    box-shadow: 15px 18px 10px -8px rgb(189, 187, 187);
+}
+
+.model p {
+  position: relative;
+  margin-top: 15vh;
+  text-align: center;
+}
+
+.model h1 {
+  position: relative;
+  margin-top: 15vh;
+}
+video{
+  border-radius: 20px;
+}
+.bye{
+  margin-top: 8vh;
+  position: relative;
+   margin-bottom: -0;
+   text-align: center;
+}
+footer{
+  border: none;
+  width: 89vw;
+  background-color:  rgb(200, 236, 236);
+  margin-top: 10vh;
+  padding: 5% 5% 1% 5%;
+  margin-bottom: -7vh;
+}
+footer p{
+  margin-left: 30vw;
+  color: black;
+  margin-top: 5vh;
+}
+.comment input{
+padding:1vw;
+margin-left: 2vw;
+width: 30vw;
+}
+.comment{
+  color: black;
+  margin-left: 15vw;
+}
+
+button{
+margin-left: 20vw;
+margin-top: 5vh;
+padding: 1vw 2vw;
+background-color: rgb(255, 190, 69);
+border-radius: 15px;
+cursor: pointer;
+}
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+@media only screen and (max-width: 750px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .color-blue {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .top-buttons {
+    margin-left: -8vw;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 25vw;
+    margin-left: 2vw;
+  }
+
+  .thinking h1 {
+    font-size: 4ex;
+  }
+
+  .images {
+    display: none;
+  }
+
+  .pick {
+    display: none;
+  }
+
+  .thinking {
+    flex-wrap: wrap;
+    position: relative;
+    top: -17vh;
+  }
+
+  .thinking img {
+    position: relative;
+    top: 0;
+    margin-left: 8vw;
+  }
+  .challenge-block{
+    display: block;
+  }
+.content{
+  display: block;
+}
+.content img{
+  margin-left: 30vw;
+}
+.google_play{
+  display: block;
+}
+.google_play img{
+  margin-left: 40vw;
+  margin-top: 5vh;
+}
+.self-driving-cars img{
+  width: 50vw;
+  margin-left: 25vw;
+}
+.previous{
+  margin-left: 1.5vw;
+}
+.what_would_you_do{
+  margin-top: -50vh;
+  color: black;
+  margin-top: 10vh;
+}
+.what_would_you_do img{
+  display: none;
+}
+.project{
+  color: black;
+  margin-top: 20vh;
+}
+.us{
+  display: block;
+  text-decoration: none;
+}
+.calm{
+  display: block;
+}
+.calm p{
+  width: 80vw;
+}
+.pulley img {
+ display: none;
+}
+.pulley p{
+  width: 80vw;
+}
+.our_work{
+  display: block;
+}
+.our_work p{
+  width: 70vw;
+}
+#sad{
+  display: none;
+}
+
+#pulley{
+   width: 70vw;
+}
+.Helping{
+  display: block;
+  margin-left: 2vw;
+}
+.power{
+  display: none;
+}
+.model{
+  display: block;
+   margin-left: 0vw;
+}
+.videos{
+  margin-left: 1vw;
+}
+.video{
+  margin-left: 1vw;
+}
+.video{
+  margin-left: -0vw;
+}
+.content{
+  width: 87vw;
+}
+.content p{
+  width: 85vw;
+}
+.calculation p{
+  width: 80vw;
+}
+}
+
+
+
+@media only screen and (min-width:751px) and (max-width:999px) {
+   body {
+    overflow-x: hidden;
+  }
+
+  .images {
+    display: none;
+  }
+  .thinking {
+    flex-wrap: wrap;
+    position: relative;
+    top: -17vh;
+  }
+    .thinking img {
+    position: relative;
+    top: -2vh;
+    margin-left: 50vw;
+  }
+  .video{
+    margin-left: 20vw;
+  }
+  .google_play img{
+    width: 50vw;
+  }
+  .us{
+ color: black;
+  text-decoration: none;
+   margin-top: 5vh;
+}
+.us p{
+   border-right:solid 1px black ;
+}
+.what_would_you_do img{
+  display: none;
+}
+
+.project{
+  color: black;
+  width: 80vw;
+margin-left: 10vw;
+margin-top: 10vh;
+}
+.calm{
+  display: block;
+}
+.pulley{
+  display: block;
+}
+.pulley p{
+  width: 80vw;
+}
+.pulley img{
+  margin-top: 15vh;
+  margin-left: 20vw;
+  width: 50vw;
+}
+#pulley{
+  width: 50vw;
+}
+.our_work p{
+  margin-left: 1vw;
+}
+.Helping{
+  margin-left: 4vw;
+}
+.electricity{
+  height: 70vh;
+}
+}
+
+@media only screen and (min-width:1000px) and (max-width:1300px){
+ .electricity{
+  height: 95vh;
+ } 
+ .pulley img{
+  width: 30vw;
+ }
+ #pulley{
+  width:40vw
+ }
+ .electric{
+  margin-top: -3vh;
+ }
+ .thinking{
+  margin-top: 2vh;
+ }
+ .text h1{
+  font-size: 6ex;
+ }
+ .thinking img{
+  margin-top: 14vh;
+ }
+ .video{
+  margin-left: 35vw;
+ }
+ .us{
+  margin-top: -10vh;
+ }
+ .project {
+  position: relative;
+  margin-top: -150vh;
+ }
+}

@@ -1,0 +1,310 @@
+@font-face {
+  font-family: poppins;
+  src: url(Fonts/Poppins-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  font-family: poppins;
+  overflow-x: hidden;
+  margin-bottom: -0;
+}
+
+.color-blue {
+  position: relative;
+  background-color: rgb(179, 236, 177);
+  width: 100vw;
+  height: 70vh;
+  box-sizing: border-box;
+}
+
+.logo {
+  position: relative;
+  top: 2vw;
+  display: flex;
+  gap: 1vw;
+}
+
+.logo img {
+  width: 4vw;
+  margin-left: 2vw;
+}
+
+.top-buttons {
+  display: flex;
+  margin-left: auto;
+  gap: 5vw;
+  align-items: center;
+  padding-right: 2vw;
+  z-index: 10;
+  position: relative;
+}
+
+.top-buttons a {
+  text-decoration: none;
+  color: palevioletred;
+}
+
+.top-buttons a:hover {
+  cursor: pointer;
+  color: black;
+  border-radius: 20px;
+}
+
+
+.thinking {
+  margin-top: 1vh;
+  margin-left: 5vw;
+  color:palevioletred;
+  display: flex;
+}
+
+.thinking h1 {
+  font-size: 8ex;
+}
+
+.thinking img {
+  width: 30vw;
+  margin-left: 30vw;
+  position: relative;
+  top: -28vh;
+}
+
+#fun {
+  margin-left: 7vw;
+}
+
+
+.ready {
+  text-align: center;
+  margin-top: 5vh;
+  color: palevioletred;
+  font-size: 3ex;
+}
+
+.ready p {
+  font-size: 1ex;
+}
+
+.ready:hover {
+  transform: scale(1.1);
+}
+  body {
+    margin: 0; padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #F0F4F8;
+    color: #222;
+    line-height: 1.6;
+  }
+  a {
+    color: #1976D2;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+  }
+  header {
+    background: linear-gradient(135deg, #1976D2 0%, #43A047 100%);
+    color: white;
+    padding: 100px 20px 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  header h1 {
+    font-weight: 700;
+    font-size: 3.6rem;
+    margin-bottom: 0.3em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  }
+  header p.lead {
+    font-size: 1.4rem;
+    max-width: 600px;
+    margin: 0 auto 1.5em;
+    font-weight: 500;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.25);
+  }
+  header .hero-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    margin: 0 auto 1.5em;
+    object-fit: cover;
+    background: white;
+    transition: transform 0.3s ease;
+  }
+  header .hero-img:hover {
+    transform: scale(1.1);
+  }
+  header .btn-primary {
+    background: #fff;
+    color: #1976D2;
+    font-weight: 700;
+    padding: 16px 48px;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    box-shadow: 0 6px 12px rgba(255,255,255,0.6);
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  header .btn-primary:hover {
+    background: #1565C0;
+    color: white;
+  }
+  section {
+    background: white;
+    margin-top: -80px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    padding: 50px 50px 60px;
+  }
+  section h2 {
+    color: #1976D2;
+    font-weight: 700;
+    font-size: 2.6rem;
+    margin-bottom: 36px;
+    border-bottom: 4px solid #43A047;
+    display: inline-block;
+    padding-bottom: 8px;
+  }
+  .flex-cards {
+    display: flex;
+    gap: 36px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    background: #E3F2FD;
+    border-radius: 18px;
+    padding: 28px 24px;
+    flex: 1 1 320px;
+    max-width: 340px;
+    box-shadow: 0 6px 18px rgba(25, 118, 210, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 40px rgba(25, 118, 210, 0.35);
+  }
+  .card i {
+    font-size: 4rem;
+    color: #1976D2;
+    margin-bottom: 22px;
+  }
+  .card p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0D47A1;
+  }
+  ul.steps {
+    list-style: none;
+    padding-left: 0;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  ul.steps li {
+    position: relative;
+    font-size: 1.3rem;
+    padding-left: 48px;
+    margin-bottom: 28px;
+    font-weight: 600;
+    color: #333;
+  }
+  ul.steps li::before {
+    content: counter(step);
+    counter-increment: step;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #43A047;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.18);
+  }
+  ul.steps {
+    counter-reset: step;
+  }
+  table.animal-traits {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 28px;
+    font-size: 1.1rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  table.animal-traits thead {
+    background: #1976D2;
+    color: white;
+  }
+  table.animal-traits th, table.animal-traits td {
+    padding: 18px 24px;
+    border-bottom: 1px solid #C5CAE9;
+    text-align: left;
+  }
+  table.animal-traits tbody tr:hover {
+    background: #E8F0FE;
+  }
+  .traits-images {
+    margin-top: 28px;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+  }
+  .traits-images img {
+    width: 180px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+  }
+  .traits-images img:hover {
+    transform: scale(1.08);
+  }
+  .real-life {
+    background: #E8F5E9;
+    border-left: 8px solid #43A047;
+    padding: 32px 36px;
+    margin-top: 40px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2E7D32;
+    border-radius: 20px;
+    max-width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 28px rgba(67, 160, 71, 0.2);
+  }
+  .real-life ul {
+    margin: 0 0 12px 24px;
+  }
+  .real-life ul li {
+    margin-bottom: 14px;
+  }
+  footer {
+    background: #1976D2;
+    color: white;
+    text-align: center;
+    padding: 22px 20px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 1.4px;
+    margin-top: 80px;
+    border-radius: 0 0 20px 20px;
+  }
